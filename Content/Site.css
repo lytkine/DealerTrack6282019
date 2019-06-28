@@ -1,0 +1,152 @@
+﻿body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(28, 28, 30);
+    
+}
+
+h1 {
+    color:#e0e0e0;
+    border-bottom:solid 1px #a0a0a0;
+    padding-bottom:.7em;
+}
+
+.panelone {
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.paneltwo {
+    background:#FFF;
+    padding:1em;
+    margin: 2em 0 0 0;
+    display:block;
+}
+
+.noshow {
+    display:none;
+}
+
+h2 {
+    text-align:center;
+}
+
+#tbldata {
+    border-collapse: collapse;
+    background:#fff;
+    border:solid 1px #ccc;
+    border-radius:5px;
+    margin: 0 auto;
+    width:100%;
+}
+
+    #tbldata td {
+        border-bottom: dotted 1px #ccc;
+        padding: .3em 1.8em;
+    }
+    #tbldata th {
+        background: #eeeeee;
+        background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+        background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%);
+        background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+        padding: .3em 1.8em;
+        font-size:smaller;
+        border-right: solid 1px #999;
+    }
+
+        #tbldata th:last-child {
+            border-right:none;
+        }
+
+
+    #tbldata tr:nth-child(odd) {
+        background:#fafafa;
+    }
+
+    #tbldata td.cnt {
+        text-align:center;
+    }
+
+    #paneldetails {
+        margin: 1.5em 3.5em;
+        background: #fff;
+        text-align: center;
+        border-radius: 10px;
+        border: solid 1px #ccc;
+        line-height: 2em;
+        background: #fff9c4;
+        font-weight: bold;
+        font-size: smaller;
+    }
+
+
+.btn {
+    -moz-box-shadow: inset 0px -3px 7px 0px #29bbff;
+    -webkit-box-shadow: inset 0px -3px 7px 0px #29bbff;
+    box-shadow: inset 0px -3px 7px 0px #29bbff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+    background: -moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    background: -webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    background: -o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    background: -ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+    background-color: #2dabf9;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    border: 1px solid #0b0e07;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 9px 23px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #263666;
+}
+
+    .btn:hover {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+        background: -moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+        background: -webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+        background: -o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+        background: -ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+        background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+        background-color: #0688fa;
+    }
+
+    .btn:active {
+        position: relative;
+        top: 1px;
+    }
+
+
+.fileContainer {
+    overflow: hidden;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: 0;
+    background: red;
+    border-radius: .5em;
+    float: left;
+    padding: .5em;
+}
+
+    .fileContainer [type=file] {
+        cursor: inherit;
+        display: block;
+        font-size: 999px;
+        filter: alpha(opacity=0);
+        min-height: 100%;
+        min-width: 100%;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+        cursor: pointer;
+    }

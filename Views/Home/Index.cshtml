@@ -1,0 +1,33 @@
+﻿@{ 
+    ViewBag.Title = "Home Page";
+}
+
+
+
+    <div class="panelone">
+        <h1>DealerTrack Sales File Display</h1>
+        <button id="btnUpload" class="btn">Upload Sales .CSV</button>
+    </div>
+
+    <div class="paneltwo noshow">
+        <h2 id="lblReportName"></h2>
+        <div id="paneldetails">
+            <label>Total Sales Records in the File:</label> <span id="detailRecNumber"></span><br />
+            <label>Best Selling Vehicle:</label><span id="detailBestVehicle"></span>
+        </div>
+        <table id="tbldata"></table>
+    </div>
+
+
+
+
+<form name="fileup" id="fileup">
+    <div class="fileContainer">
+        <input type="file" name="UploadFile" id="fileupload" accept=".csv" />
+    </div>
+</form>
+
+
+@section scripts {
+    <script type="text/javascript" src="~/Scripts/homepage.js"></script>
+}
